@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public float DoorMovement = 4f;
-    public float DoorSpeed = 4f;
+    [SerializeField] float DoorMovement;
+    [SerializeField] float DoorSpeed;
     private bool isOpening = false;
     private Vector3 InitDoorPosition;
     private Vector3 FinalDoorPosition;

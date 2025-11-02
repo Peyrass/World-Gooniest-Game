@@ -39,7 +39,7 @@ public class PlayerLogic : MonoBehaviour
         
         else if (other.gameObject.CompareTag("Size"))
         {
-            transform.localScale *= 0.4f; //= new Vector3(0.3f, 0.3f, 0.3f)
+            transform.localScale *= 0.4f; //= new Vector3(0.4f, 0.4f, 0.4f)
             Destroy(other.gameObject);
         }
         
