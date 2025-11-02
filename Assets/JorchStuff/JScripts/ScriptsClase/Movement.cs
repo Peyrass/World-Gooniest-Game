@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
         float vImput = Input.GetAxisRaw("Vertical"); //-1, 0, 1
         Debug.Log(hImput);
         
-        //1. variable tipo Vector3 que recoja los dos inputs anteriores
+        //Variable tipo Vector3 que recoge los dos inputs anteriores y los normaliza
         Vector3 movementDirection = new Vector3(hImput, vImput, 0f).normalized;
         
         //2. Nos movemos en función del Vector3 del paso 1 a 3 unidades/s
@@ -64,7 +64,7 @@ public class Movement : MonoBehaviour
             Obtain_Coins(other);
         }*/
         
-        if (other.gameObject.CompareTag("Tramp"))
+        if (other.gameObject.CompareTag("Trap"))
         {
             //transform.position = posicionInicial;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -96,13 +96,4 @@ public class Movement : MonoBehaviour
             
     }
 
-    
-    
-    /*private void Obtain_Coins(Collider2D other)
-    {
-        coins++; //entonces coins++
-        textoScore.text = "Score: " + coins;
-        Destroy(other.gameObject);
-        Debug.Log(coins);
-    }*/
 }

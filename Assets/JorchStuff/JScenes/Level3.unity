@@ -525,8 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9237ba3d45b70bb49926bad0cdeff1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Espiral
-  velocidadRotacion: 100
-  direccionRotacion: {x: 0, y: 0, z: 0}
+  Torque: 0
 --- !u!1001 &577853554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1216,6 +1215,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 705248959}
     m_Modifications:
+    - target: {fileID: -9103285801648389189, guid: 39739b91fcec2e84c9285617d742f336, type: 3}
+      propertyPath: Torque
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 8190380955051484317, guid: 39739b91fcec2e84c9285617d742f336, type: 3}
       propertyPath: m_Name
       value: Espiral 1
@@ -1944,6 +1947,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 705248959}
     m_Modifications:
+    - target: {fileID: -9103285801648389189, guid: c94f46c598f531242ab46c7dddde2b26, type: 3}
+      propertyPath: Torque
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 8190380955051484317, guid: c94f46c598f531242ab46c7dddde2b26, type: 3}
       propertyPath: m_Name
       value: Espiral 2
@@ -2207,6 +2214,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 705248959}
     m_Modifications:
     - target: {fileID: 2316252712834111877, guid: f8789d89881617e4f824e7b79287142a, type: 3}
+      propertyPath: Torque
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316252712834111877, guid: f8789d89881617e4f824e7b79287142a, type: 3}
       propertyPath: velocidadRotacion
       value: -75
       objectReference: {fileID: 0}
@@ -2314,6 +2325,10 @@ PrefabInstance:
     - target: {fileID: 8382863563167029581, guid: afbd1a601d9c5ab4c898482689f36f6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067658121459917496, guid: afbd1a601d9c5ab4c898482689f36f6c, type: 3}
+      propertyPath: numerito
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

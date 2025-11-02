@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836863713861376505}
   - component: {fileID: 6045801932216438032}
+  - component: {fileID: 904558020870466378}
   m_Layer: 0
   m_Name: Tup
   m_TagString: Untagged
@@ -90,6 +91,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &904558020870466378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526455484376052453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b181ca46ee382469c977d0a6d2f800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  velocidad: 5
+  direccionInicial: {x: 0, y: 1, z: 0}
+  numerito: 0.5
 --- !u!1 &3046345134486118050
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2288577791979941509}
   - component: {fileID: 5135000660555351136}
+  - component: {fileID: 1889770915559805714}
   m_Layer: 0
   m_Name: Tright
   m_TagString: Untagged
@@ -180,6 +197,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1889770915559805714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046345134486118050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b181ca46ee382469c977d0a6d2f800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  velocidad: 0
+  direccionInicial: {x: 0, y: 0, z: 0}
+  numerito: 0
 --- !u!1 &4409571562307189117
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4331716592326131988}
   - component: {fileID: 7689091784589151235}
+  - component: {fileID: 8043943578126608297}
   m_Layer: 0
   m_Name: Tleft
   m_TagString: Untagged
@@ -304,3 +337,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8043943578126608297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122246257558000668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b181ca46ee382469c977d0a6d2f800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  velocidad: 0
+  direccionInicial: {x: 0, y: 0, z: 0}
+  numerito: 0
