@@ -4,16 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Key
-  - Meta
-  - MiniSquare
   - Trap
-  - SpriteChange
   - Points
-  - Tramp
-  - Coin
   - UI
   - Wall
+  - Exit
+  - Size
   layers:
   - Default
   - TransparentFX

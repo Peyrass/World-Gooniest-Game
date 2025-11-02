@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6209808882075266086}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Tramp
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ad9803e83c14249ac02aae2fc080de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  DoorMovement: 3
-  DoorSpeed: 2
+  DoorMovement: -5
+  DoorSpeed: 5
 --- !u!212 &6237264224874267956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.76651967, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

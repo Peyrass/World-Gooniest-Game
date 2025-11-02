@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLogic : MonoBehaviour
 {
-    private PlayerMovement playerMovement;
         [SerializeField] private TMP_Text ScoreText;
     public int orbs;
     public Door door; 
@@ -12,15 +11,9 @@ public class PlayerLogic : MonoBehaviour
     public AudioClip OrbSound;
     public AudioClip DeathSound;
     
-
-    void Start()
-    {
-        var rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true;
-    }
     void Update()
     {
-        if (orbs == 3) //Al cumplirse se abre la puerta
+        if (orbs == 3)
         {
             door.OpenDoor();
         }
@@ -38,7 +31,7 @@ public class PlayerLogic : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
-        else if (other.gameObject.CompareTag("Finish"))
+        else if (other.gameObject.CompareTag("Exit"))
         {
             int ThisScene =  SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(ThisScene + 1);
@@ -46,7 +39,7 @@ public class PlayerLogic : MonoBehaviour
         
         else if (other.gameObject.CompareTag("Size"))
         {
-            transform.localScale *= 0.3f; //= new Vector3(0.3f, 0.3f, 0.3f)
+            transform.localScale *= 0.4f; //= new Vector3(0.3f, 0.3f, 0.3f)
             Destroy(other.gameObject);
         }
         
